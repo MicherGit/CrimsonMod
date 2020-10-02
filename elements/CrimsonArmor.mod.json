@@ -1,0 +1,53 @@
+{
+  "_fv": 10,
+  "_type": "armor",
+  "definition": {
+    "enableHelmet": true,
+    "textureHelmet": "crimson_head",
+    "enableBody": true,
+    "textureBody": "crimson_body",
+    "enableLeggings": true,
+    "textureLeggings": "crimson_leggings",
+    "enableBoots": true,
+    "textureBoots": "crimson_boots",
+    "creativeTab": {
+      "value": "COMBAT"
+    },
+    "armorTextureFile": "crimson",
+    "helmetName": "Crimson Helmet",
+    "bodyName": "Crimson Chestplate",
+    "leggingsName": "Crimson Leggings",
+    "bootsName": "Crimson Boots",
+    "helmetSpecialInfo": [],
+    "bodySpecialInfo": [],
+    "leggingsSpecialInfo": [],
+    "bootsSpecialInfo": [],
+    "helmetModelName": "Default",
+    "helmetModelPart": "Helmet",
+    "helmetModelTexture": "From armor",
+    "bodyModelName": "Default",
+    "bodyModelPart": "Body",
+    "armsModelPartL": "Arms L",
+    "armsModelPartR": "Arms R",
+    "bodyModelTexture": "From armor",
+    "leggingsModelName": "Default",
+    "leggingsModelPartL": "Leggings L",
+    "leggingsModelPartR": "Leggings R",
+    "leggingsModelTexture": "From armor",
+    "bootsModelName": "Default",
+    "bootsModelPartL": "Boots L",
+    "bootsModelPartR": "Boots R",
+    "bootsModelTexture": "From armor",
+    "maxDamage": 105,
+    "damageValueHelmet": 14,
+    "damageValueBody": 35,
+    "damageValueLeggings": 42,
+    "damageValueBoots": 14,
+    "enchantability": 63,
+    "toughness": 0.0,
+    "equipSound": {
+      "value": ""
+    },
+    "repairItems": []
+  }
+}

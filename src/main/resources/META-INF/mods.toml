@@ -1,0 +1,24 @@
+modLoader="javafml"
+loaderVersion="[31,)"
+
+[[mods]]
+modId="infinitepower"
+version="0.3.0dv_03"
+displayName="The Crimson"
+credits="Created using mod maker MCreator - https://mcreator.net/about"
+displayURL="https://mcreator.net"
+authors="Zetabloox"
+description='''
+Crimsontale mod for Minecraft 1.15.2
+'''
+
+[[dependencies.infinitepower]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.15.2]"
+    ordering="NONE"
+    side="BOTH"
+
+
+
+

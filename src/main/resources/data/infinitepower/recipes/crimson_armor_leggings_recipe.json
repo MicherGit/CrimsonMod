@@ -1,0 +1,36 @@
+{
+  "group": "infinitepower",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "3 5",
+    "6 8"
+  ],
+  "key": {
+    "0": {
+      "item": "infinitepower:crimson_gem"
+    },
+    "1": {
+      "item": "infinitepower:crimson_gem"
+    },
+    "2": {
+      "item": "infinitepower:crimson_gem"
+    },
+    "3": {
+      "item": "infinitepower:crimson_gem"
+    },
+    "5": {
+      "item": "infinitepower:crimson_gem"
+    },
+    "6": {
+      "item": "infinitepower:crimson_gem"
+    },
+    "8": {
+      "item": "infinitepower:crimson_gem"
+    }
+  },
+  "result": {
+    "item": "infinitepower:crimson_armor_leggings",
+    "count": 1
+  }
+}

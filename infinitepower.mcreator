@@ -1,0 +1,892 @@
+{
+  "id_map": {},
+  "mod_elements": [
+    {
+      "name": "CrimsonPickaxe",
+      "type": "tool",
+      "sortid": 64,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "crimson_pickaxe"
+    },
+    {
+      "name": "CrimsonAxe",
+      "type": "tool",
+      "sortid": 65,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "crimson_axe"
+    },
+    {
+      "name": "CrimsonSword",
+      "type": "tool",
+      "sortid": 66,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "crimson_sword"
+    },
+    {
+      "name": "CrimsonShovel",
+      "type": "tool",
+      "sortid": 67,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "crimson_shovel"
+    },
+    {
+      "name": "CrimsonHoe",
+      "type": "tool",
+      "sortid": 68,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "crimson_hoe"
+    },
+    {
+      "name": "CrimsonPickaxeRecipe",
+      "type": "recipe",
+      "sortid": 69,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "crimson_pickaxe_recipe"
+    },
+    {
+      "name": "CrimsonAxeRecipe",
+      "type": "recipe",
+      "sortid": 70,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "crimson_axe_recipe"
+    },
+    {
+      "name": "CrimsonSwordRecipe",
+      "type": "recipe",
+      "sortid": 71,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "crimson_sword_recipe"
+    },
+    {
+      "name": "CrimsonShovelRecipe",
+      "type": "recipe",
+      "sortid": 72,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "crimson_shovel_recipe"
+    },
+    {
+      "name": "CrimsonHoeRecipe",
+      "type": "recipe",
+      "sortid": 73,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "crimson_hoe_recipe"
+    },
+    {
+      "name": "CrimsonArmor",
+      "type": "armor",
+      "sortid": 74,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "crimson_armor"
+    },
+    {
+      "name": "CrimsonArmorHelmetRecipe",
+      "type": "recipe",
+      "sortid": 75,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "crimson_armor_helmet_recipe"
+    },
+    {
+      "name": "CrimsonArmorBodyRecipe",
+      "type": "recipe",
+      "sortid": 76,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "crimson_armor_body_recipe"
+    },
+    {
+      "name": "CrimsonArmorLeggingsRecipe",
+      "type": "recipe",
+      "sortid": 77,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "crimson_armor_leggings_recipe"
+    },
+    {
+      "name": "CrimsonArmorBootsRecipe",
+      "type": "recipe",
+      "sortid": 78,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "crimson_armor_boots_recipe"
+    },
+    {
+      "name": "QuartzPickaxe",
+      "type": "tool",
+      "sortid": 79,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "quartz_pickaxe"
+    },
+    {
+      "name": "QuartzAxe",
+      "type": "tool",
+      "sortid": 80,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "quartz_axe"
+    },
+    {
+      "name": "QuartzSword",
+      "type": "tool",
+      "sortid": 81,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "quartz_sword"
+    },
+    {
+      "name": "QuartzShovel",
+      "type": "tool",
+      "sortid": 82,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "quartz_shovel"
+    },
+    {
+      "name": "QuartzHoe",
+      "type": "tool",
+      "sortid": 83,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "quartz_hoe"
+    },
+    {
+      "name": "QuartzPickaxeRecipe",
+      "type": "recipe",
+      "sortid": 84,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "quartz_pickaxe_recipe"
+    },
+    {
+      "name": "QuartzAxeRecipe",
+      "type": "recipe",
+      "sortid": 85,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "quartz_axe_recipe"
+    },
+    {
+      "name": "QuartzSwordRecipe",
+      "type": "recipe",
+      "sortid": 86,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "quartz_sword_recipe"
+    },
+    {
+      "name": "QuartzShovelRecipe",
+      "type": "recipe",
+      "sortid": 87,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "quartz_shovel_recipe"
+    },
+    {
+      "name": "QuartzHoeRecipe",
+      "type": "recipe",
+      "sortid": 88,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "quartz_hoe_recipe"
+    },
+    {
+      "name": "QuartzArmor",
+      "type": "armor",
+      "sortid": 89,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "quartz_armor"
+    },
+    {
+      "name": "QuartzArmorHelmetRecipe",
+      "type": "recipe",
+      "sortid": 90,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "quartz_armor_helmet_recipe"
+    },
+    {
+      "name": "QuartzArmorBodyRecipe",
+      "type": "recipe",
+      "sortid": 91,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "quartz_armor_body_recipe"
+    },
+    {
+      "name": "QuartzArmorLeggingsRecipe",
+      "type": "recipe",
+      "sortid": 92,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "quartz_armor_leggings_recipe"
+    },
+    {
+      "name": "QuartzArmorBootsRecipe",
+      "type": "recipe",
+      "sortid": 93,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "quartz_armor_boots_recipe"
+    },
+    {
+      "name": "TheCrimsonVoid",
+      "type": "dimension",
+      "sortid": 94,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "the_crimson_void"
+    },
+    {
+      "name": "Igniter",
+      "type": "recipe",
+      "sortid": 95,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "igniter"
+    },
+    {
+      "name": "Voidblock",
+      "type": "block",
+      "sortid": 96,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "voidblock"
+    },
+    {
+      "name": "SapphireGem",
+      "type": "item",
+      "sortid": 97,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sapphire_gem"
+    },
+    {
+      "name": "SapphireOre",
+      "type": "block",
+      "sortid": 98,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sapphire_ore"
+    },
+    {
+      "name": "SapphireOreBlock",
+      "type": "block",
+      "sortid": 99,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sapphire_ore_block"
+    },
+    {
+      "name": "SapphireOreBlockRecipe",
+      "type": "recipe",
+      "sortid": 100,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sapphire_ore_block_recipe"
+    },
+    {
+      "name": "SapphireBlockOreRecipe",
+      "type": "recipe",
+      "sortid": 101,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sapphire_block_ore_recipe"
+    },
+    {
+      "name": "SapphireOreSmelting",
+      "type": "recipe",
+      "sortid": 102,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sapphire_ore_smelting"
+    },
+    {
+      "name": "SapphirePickaxe",
+      "type": "tool",
+      "sortid": 103,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sapphire_pickaxe"
+    },
+    {
+      "name": "SapphireAxe",
+      "type": "tool",
+      "sortid": 104,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sapphire_axe"
+    },
+    {
+      "name": "SapphireSword",
+      "type": "tool",
+      "sortid": 105,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sapphire_sword"
+    },
+    {
+      "name": "SapphireShovel",
+      "type": "tool",
+      "sortid": 106,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sapphire_shovel"
+    },
+    {
+      "name": "SapphireHoe",
+      "type": "tool",
+      "sortid": 107,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sapphire_hoe"
+    },
+    {
+      "name": "SapphirePickaxeRecipe",
+      "type": "recipe",
+      "sortid": 108,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sapphire_pickaxe_recipe"
+    },
+    {
+      "name": "SapphireAxeRecipe",
+      "type": "recipe",
+      "sortid": 109,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sapphire_axe_recipe"
+    },
+    {
+      "name": "SapphireSwordRecipe",
+      "type": "recipe",
+      "sortid": 110,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sapphire_sword_recipe"
+    },
+    {
+      "name": "SapphireShovelRecipe",
+      "type": "recipe",
+      "sortid": 111,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sapphire_shovel_recipe"
+    },
+    {
+      "name": "SapphireHoeRecipe",
+      "type": "recipe",
+      "sortid": 112,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sapphire_hoe_recipe"
+    },
+    {
+      "name": "SapphireArmor",
+      "type": "armor",
+      "sortid": 113,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sapphire_armor"
+    },
+    {
+      "name": "SapphireArmorHelmetRecipe",
+      "type": "recipe",
+      "sortid": 114,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sapphire_armor_helmet_recipe"
+    },
+    {
+      "name": "SapphireArmorBodyRecipe",
+      "type": "recipe",
+      "sortid": 115,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sapphire_armor_body_recipe"
+    },
+    {
+      "name": "SapphireArmorLeggingsRecipe",
+      "type": "recipe",
+      "sortid": 116,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sapphire_armor_leggings_recipe"
+    },
+    {
+      "name": "SapphireArmorBootsRecipe",
+      "type": "recipe",
+      "sortid": 117,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sapphire_armor_boots_recipe"
+    },
+    {
+      "name": "VoidShadowIngot",
+      "type": "item",
+      "sortid": 118,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "void_shadow_ingot"
+    },
+    {
+      "name": "VoidShadowOre",
+      "type": "block",
+      "sortid": 119,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "void_shadow_ore"
+    },
+    {
+      "name": "VoidShadowOreBlock",
+      "type": "block",
+      "sortid": 120,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "void_shadow_ore_block"
+    },
+    {
+      "name": "VoidShadowOreBlockRecipe",
+      "type": "recipe",
+      "sortid": 121,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "void_shadow_ore_block_recipe"
+    },
+    {
+      "name": "VoidShadowBlockOreRecipe",
+      "type": "recipe",
+      "sortid": 122,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "void_shadow_block_ore_recipe"
+    },
+    {
+      "name": "VoidShadowOreSmelting",
+      "type": "recipe",
+      "sortid": 123,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "void_shadow_ore_smelting"
+    },
+    {
+      "name": "VoidShadowPickaxe",
+      "type": "tool",
+      "sortid": 124,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "void_shadow_pickaxe"
+    },
+    {
+      "name": "VoidShadowAxe",
+      "type": "tool",
+      "sortid": 125,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "void_shadow_axe"
+    },
+    {
+      "name": "VoidShadowSword",
+      "type": "tool",
+      "sortid": 126,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "void_shadow_sword"
+    },
+    {
+      "name": "VoidShadowShovel",
+      "type": "tool",
+      "sortid": 127,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "void_shadow_shovel"
+    },
+    {
+      "name": "VoidShadowHoe",
+      "type": "tool",
+      "sortid": 128,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "void_shadow_hoe"
+    },
+    {
+      "name": "VoidShadowPickaxeRecipe",
+      "type": "recipe",
+      "sortid": 129,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "void_shadow_pickaxe_recipe"
+    },
+    {
+      "name": "VoidShadowAxeRecipe",
+      "type": "recipe",
+      "sortid": 130,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "void_shadow_axe_recipe"
+    },
+    {
+      "name": "VoidShadowSwordRecipe",
+      "type": "recipe",
+      "sortid": 131,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "void_shadow_sword_recipe"
+    },
+    {
+      "name": "VoidShadowShovelRecipe",
+      "type": "recipe",
+      "sortid": 132,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "void_shadow_shovel_recipe"
+    },
+    {
+      "name": "VoidShadowHoeRecipe",
+      "type": "recipe",
+      "sortid": 133,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "void_shadow_hoe_recipe"
+    },
+    {
+      "name": "VoidShadowArmor",
+      "type": "armor",
+      "sortid": 134,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "void_shadow_armor"
+    },
+    {
+      "name": "VoidShadowArmorHelmetRecipe",
+      "type": "recipe",
+      "sortid": 135,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "void_shadow_armor_helmet_recipe"
+    },
+    {
+      "name": "VoidShadowArmorBodyRecipe",
+      "type": "recipe",
+      "sortid": 136,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "void_shadow_armor_body_recipe"
+    },
+    {
+      "name": "VoidShadowArmorLeggingsRecipe",
+      "type": "recipe",
+      "sortid": 137,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "void_shadow_armor_leggings_recipe"
+    },
+    {
+      "name": "VoidShadowArmorBootsRecipe",
+      "type": "recipe",
+      "sortid": 138,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "void_shadow_armor_boots_recipe"
+    },
+    {
+      "name": "CrimsonGem",
+      "type": "item",
+      "sortid": 139,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "crimson_gem"
+    },
+    {
+      "name": "CrimsonOre",
+      "type": "block",
+      "sortid": 140,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "crimson_ore"
+    },
+    {
+      "name": "CrimsonOreBlock",
+      "type": "block",
+      "sortid": 141,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "crimson_ore_block"
+    },
+    {
+      "name": "CrimsonOreBlockRecipe",
+      "type": "recipe",
+      "sortid": 142,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "crimson_ore_block_recipe"
+    },
+    {
+      "name": "CrimsonBlockOreRecipe",
+      "type": "recipe",
+      "sortid": 143,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "crimson_block_ore_recipe"
+    },
+    {
+      "name": "CrimsonOreSmelting",
+      "type": "recipe",
+      "sortid": 144,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "crimson_ore_smelting"
+    },
+    {
+      "name": "EmptyPlains",
+      "type": "biome",
+      "sortid": 145,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "empty_plains"
+    },
+    {
+      "name": "Herobrine",
+      "type": "mob",
+      "sortid": 146,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "herobrine"
+    },
+    {
+      "name": "HerobrineEntityDies",
+      "type": "procedure",
+      "sortid": 147,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "herobrine_entity_dies",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "item.infinitepower.quartz_axe": "Quartz Axe",
+      "item.infinitepower.void_shadow_pickaxe": "VoidShadow Pickaxe",
+      "item.crimson.void_shadow_armor_leggings": "VoidShadow Leggings",
+      "block.crimson.voidblock": "Void",
+      "block.infinitepower.void_shadow_ore": "VoidShadow Ore",
+      "block.crimson.crimson_ore": "Crimson Ore",
+      "item.infinitepower.quartz_armor_leggings": "Quartz Leggings",
+      "item.infinitepower.quartz_pickaxe": "Quartz Pickaxe",
+      "block.crimson.void_shadow_ore": "VoidShadow Ore",
+      "item.crimson.crimson_axe": "Crimson Axe",
+      "item.crimson.void_shadow_sword": "VoidShadow Sword",
+      "item.infinitepower.sapphire_hoe": "Sapphire Hoe",
+      "item.crimson.void_shadow_ingot": "VoidShadow",
+      "item.crimson.crimson_hoe": "Crimson Hoe",
+      "item.infinitepower.sapphire_gem": "Sapphire",
+      "item.crimson.sapphire_armor_boots": "Sapphire Boots",
+      "item.infinitepower.void_shadow_axe": "VoidShadow Axe",
+      "item.crimson.quartz_armor_leggings": "Quartz Leggings",
+      "item.crimson.herobrine": "Herobrine Spawn Egg",
+      "block.infinitepower.void_shadow_ore_block": "Block of VoidShadow",
+      "item.infinitepower.quartz_hoe": "Quartz Hoe",
+      "item.crimson.quartz_armor_helmet": "Quartz Helmet",
+      "item.crimson.sapphire_armor_leggings": "Sapphire Leggings",
+      "block.infinitepower.sapphire_ore_block": "Block of Sapphire",
+      "item.infinitepower.sapphire_shovel": "Sapphire Shovel",
+      "item.infinitepower.quartz_sword": "Quartz Sword",
+      "item.crimson.quartz_sword": "Quartz Sword",
+      "item.infinitepower.quartz_shovel": "Quartz Shovel",
+      "item.infinitepower.crimson_shovel": "Crimson Shovel",
+      "item.infinitepower.crimson_armor_chestplate": "Crimson Chestplate",
+      "item.crimson.quartz_shovel": "Quartz Shovel",
+      "item.infinitepower.sapphire_armor_helmet": "Sapphire Helmet",
+      "item.crimson.crimson_armor_helmet": "Crimson Helmet",
+      "item.infinitepower.sapphire_armor_boots": "Sapphire Boots",
+      "item.infinitepower.void_shadow_ingot": "VoidShadow",
+      "item.infinitepower.void_shadow_armor_helmet": "VoidShadow Helmet",
+      "block.crimson.crimson_ore_block": "Block of Crimson",
+      "item.infinitepower.sapphire_axe": "Sapphire Axe",
+      "item.infinitepower.crimson_armor_helmet": "Crimson Helmet",
+      "item.crimson.sapphire_sword": "Sapphire Sword",
+      "item.crimson.void_shadow_armor_chestplate": "VoidShadow Chestplate",
+      "item.crimson.crimson_pickaxe": "Crimson Pickaxe",
+      "block.crimson.void_shadow_ore_block": "Block of VoidShadow",
+      "item.infinitepower.quartz_armor_helmet": "Quartz Helmet",
+      "item.crimson.quartz_pickaxe": "Quartz Pickaxe",
+      "item.infinitepower.void_shadow_armor_leggings": "VoidShadow Leggings",
+      "item.crimson.void_shadow_pickaxe": "VoidShadow Pickaxe",
+      "item.crimson.sapphire_armor_chestplate": "Sapphire Chestplate",
+      "item.crimson.sapphire_pickaxe": "Sapphire Pickaxe",
+      "block.infinitepower.sapphire_ore": "Sapphire Ore",
+      "item.infinitepower.sapphire_pickaxe": "Sapphire Pickaxe",
+      "block.infinitepower.crimson_ore_block": "Block of Crimson",
+      "item.crimson.quartz_hoe": "Quartz Hoe",
+      "entity.infinitepower.herobrine": "Herobrine",
+      "item.infinitepower.herobrine": "Herobrine Spawn Egg",
+      "item.crimson.quartz_armor_boots": "Quartz Boots",
+      "item.crimson.crimson_armor_leggings": "Crimson Leggings",
+      "item.infinitepower.crimson_gem": "Crimson",
+      "item.infinitepower.void_shadow_armor_chestplate": "VoidShadow Chestplate",
+      "block.infinitepower.crimson_ore": "Crimson Ore",
+      "item.crimson.sapphire_gem": "Sapphire",
+      "item.crimson.void_shadow_hoe": "VoidShadow Hoe",
+      "item.infinitepower.crimson_pickaxe": "Crimson Pickaxe",
+      "item.crimson.crimson_sword": "Crimson Sword",
+      "item.crimson.quartz_armor_chestplate": "Quartz Chestplate",
+      "item.infinitepower.crimson_hoe": "Crimson Hoe",
+      "item.crimson.void_shadow_armor_boots": "VoidShadow Boots",
+      "item.crimson.sapphire_hoe": "Sapphire Hoe",
+      "item.infinitepower.crimson_armor_boots": "Crimson Boots",
+      "item.crimson.the_crimson_void": "Voider",
+      "item.infinitepower.sapphire_sword": "Sapphire Sword",
+      "item.crimson.crimson_armor_chestplate": "Crimson Chestplate",
+      "item.crimson.quartz_axe": "Quartz Axe",
+      "item.infinitepower.void_shadow_armor_boots": "VoidShadow Boots",
+      "entity.crimson.herobrine": "Herobrine",
+      "item.crimson.sapphire_shovel": "Sapphire Shovel",
+      "item.crimson.void_shadow_armor_helmet": "VoidShadow Helmet",
+      "item.infinitepower.quartz_armor_boots": "Quartz Boots",
+      "item.infinitepower.crimson_armor_leggings": "Crimson Leggings",
+      "item.infinitepower.sapphire_armor_chestplate": "Sapphire Chestplate",
+      "item.infinitepower.void_shadow_sword": "VoidShadow Sword",
+      "item.crimson.crimson_gem": "Crimson",
+      "item.crimson.void_shadow_shovel": "VoidShadow Shovel",
+      "item.infinitepower.void_shadow_hoe": "VoidShadow Hoe",
+      "item.infinitepower.the_crimson_void": "Voider",
+      "item.infinitepower.crimson_axe": "Crimson Axe",
+      "item.crimson.sapphire_armor_helmet": "Sapphire Helmet",
+      "item.crimson.crimson_shovel": "Crimson Shovel",
+      "item.infinitepower.sapphire_armor_leggings": "Sapphire Leggings",
+      "item.crimson.sapphire_axe": "Sapphire Axe",
+      "item.crimson.crimson_armor_boots": "Crimson Boots",
+      "block.infinitepower.voidblock": "Void",
+      "item.infinitepower.quartz_armor_chestplate": "Quartz Chestplate",
+      "block.crimson.sapphire_ore": "Sapphire Ore",
+      "block.crimson.sapphire_ore_block": "Block of Sapphire",
+      "item.infinitepower.crimson_sword": "Crimson Sword",
+      "item.crimson.void_shadow_axe": "VoidShadow Axe",
+      "item.infinitepower.void_shadow_shovel": "VoidShadow Shovel"
+    }
+  },
+  "workspaceSettings": {
+    "modid": "infinitepower",
+    "modName": "The Crimson",
+    "version": "0.3.0dv_03",
+    "description": "Crimsontale mod for Minecraft 1.15.2",
+    "author": "Zetabloox",
+    "websiteURL": "https://mcreator.net",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.15.2",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "gg.zetabloox.thecrimson",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202000432115
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "infinitepower:blocks/void_ore",
+    "particle": "infinitepower:blocks/void_ore"
+  }
+}

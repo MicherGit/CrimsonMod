@@ -1,0 +1,26 @@
+{
+  "group": "infinitepower",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    "3 5"
+  ],
+  "key": {
+    "0": {
+      "item": "infinitepower:sapphire_gem"
+    },
+    "2": {
+      "item": "infinitepower:sapphire_gem"
+    },
+    "3": {
+      "item": "infinitepower:sapphire_gem"
+    },
+    "5": {
+      "item": "infinitepower:sapphire_gem"
+    }
+  },
+  "result": {
+    "item": "infinitepower:sapphire_armor_boots",
+    "count": 1
+  }
+}

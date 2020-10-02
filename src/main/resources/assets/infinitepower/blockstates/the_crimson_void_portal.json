@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "axis=z": {
+      "model": "infinitepower:block/the_crimson_void_portal_ew"
+    },
+    "axis=x": {
+      "model": "infinitepower:block/the_crimson_void_portal_ns"
+    }
+  }
+}

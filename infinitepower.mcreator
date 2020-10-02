@@ -764,6 +764,15 @@
           }
         ]
       }
+    },
+    {
+      "name": "Crimsontale",
+      "type": "tab",
+      "sortid": 148,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "crimsontale"
     }
   ],
   "variable_elements": [],
@@ -806,6 +815,7 @@
       "item.infinitepower.sapphire_armor_boots": "Sapphire Boots",
       "item.infinitepower.void_shadow_ingot": "VoidShadow",
       "item.infinitepower.void_shadow_armor_helmet": "VoidShadow Helmet",
+      "itemGroup.tabcrimsontale": "The Crimson",
       "block.crimson.crimson_ore_block": "Block of Crimson",
       "item.infinitepower.sapphire_axe": "Sapphire Axe",
       "item.infinitepower.crimson_armor_helmet": "Crimson Helmet",
@@ -873,7 +883,7 @@
   "workspaceSettings": {
     "modid": "infinitepower",
     "modName": "The Crimson",
-    "version": "0.3.0dv_03",
+    "version": "0.3.0rc2",
     "description": "Crimsontale mod for Minecraft 1.15.2",
     "author": "Zetabloox",
     "websiteURL": "https://mcreator.net",

@@ -28,11 +28,11 @@
     "resistance": 31.547867224009668,
     "hasGravity": false,
     "creativeTab": {
-      "value": "BUILDING_BLOCKS"
+      "value": "CUSTOM:Crimsontale"
     },
     "destroyTool": "pickaxe",
     "customDrop": {
-      "value": "CUSTOM:VoidShadowIngot"
+      "value": ""
     },
     "dropAmount": 1,
     "isBeaconBase": false,

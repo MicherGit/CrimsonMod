@@ -4,10 +4,10 @@ package gg.zetabloox.thecrimson.item;
 import net.minecraftforge.registries.ObjectHolder;
 
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.block.BlockState;
 
+import gg.zetabloox.thecrimson.itemgroup.CrimsontaleItemGroup;
 import gg.zetabloox.thecrimson.InfinitepowerModElements;
 
 @InfinitepowerModElements.ModElement.Tag
@@ -24,7 +24,7 @@ public class VoidShadowIngotItem extends InfinitepowerModElements.ModElement {
 	}
 	public static class ItemCustom extends Item {
 		public ItemCustom() {
-			super(new Item.Properties().group(ItemGroup.MISC).maxStackSize(64));
+			super(new Item.Properties().group(CrimsontaleItemGroup.tab).maxStackSize(64));
 			setRegistryName("void_shadow_ingot");
 		}
 

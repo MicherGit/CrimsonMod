@@ -18,7 +18,6 @@ import net.minecraft.world.biome.Biome;
 import net.minecraft.world.IWorld;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.item.BlockItem;
 import net.minecraft.block.material.Material;
@@ -31,6 +30,7 @@ import java.util.Random;
 import java.util.List;
 import java.util.Collections;
 
+import gg.zetabloox.thecrimson.itemgroup.CrimsontaleItemGroup;
 import gg.zetabloox.thecrimson.item.CrimsonGemItem;
 import gg.zetabloox.thecrimson.InfinitepowerModElements;
 
@@ -46,7 +46,7 @@ public class CrimsonOreBlock extends InfinitepowerModElements.ModElement {
 	public void initElements() {
 		elements.blocks.add(() -> new CustomBlock());
 		elements.items
-				.add(() -> new BlockItem(block, new Item.Properties().group(ItemGroup.BUILDING_BLOCKS)).setRegistryName(block.getRegistryName()));
+				.add(() -> new BlockItem(block, new Item.Properties().group(CrimsontaleItemGroup.tab)).setRegistryName(block.getRegistryName()));
 	}
 	public static class CustomBlock extends Block {
 		public CustomBlock() {

@@ -28,7 +28,7 @@
     "resistance": 23.716381969016833,
     "hasGravity": false,
     "creativeTab": {
-      "value": "BUILDING_BLOCKS"
+      "value": "CUSTOM:Crimsontale"
     },
     "destroyTool": "pickaxe",
     "customDrop": {

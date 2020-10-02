@@ -29,7 +29,6 @@ import net.minecraft.network.IPacket;
 import net.minecraft.nbt.CompoundNBT;
 import net.minecraft.item.SpawnEggItem;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.entity.player.ServerPlayerEntity;
@@ -57,6 +56,7 @@ import java.util.Map;
 import java.util.HashMap;
 
 import gg.zetabloox.thecrimson.procedures.HerobrineEntityDiesProcedure;
+import gg.zetabloox.thecrimson.itemgroup.CrimsontaleItemGroup;
 import gg.zetabloox.thecrimson.item.VoidShadowSwordItem;
 import gg.zetabloox.thecrimson.item.VoidShadowIngotItem;
 import gg.zetabloox.thecrimson.InfinitepowerModElements;
@@ -75,7 +75,8 @@ public class HerobrineEntity extends InfinitepowerModElements.ModElement {
 				.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new).immuneToFire().size(0.6f, 1.8f))
 						.build("herobrine").setRegistryName("herobrine");
 		elements.entities.add(() -> entity);
-		elements.items.add(() -> new SpawnEggItem(entity, -16711732, -1, new Item.Properties().group(ItemGroup.MISC)).setRegistryName("herobrine"));
+		elements.items.add(
+				() -> new SpawnEggItem(entity, -16711732, -1, new Item.Properties().group(CrimsontaleItemGroup.tab)).setRegistryName("herobrine"));
 	}
 
 	@Override

@@ -2,8 +2,11 @@
 package gg.zetabloox.thecrimson.item;
 
 import net.minecraftforge.registries.ObjectHolder;
+import net.minecraftforge.api.distmarker.OnlyIn;
+import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.item.crafting.Ingredient;
+import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.item.IItemTier;
@@ -46,6 +49,11 @@ public class CrimsonAxeItem extends InfinitepowerModElements.ModElement {
 				return Ingredient.EMPTY;
 			}
 		}, 1, -3f, new Item.Properties().group(ItemGroup.TOOLS)) {
+			@Override
+			@OnlyIn(Dist.CLIENT)
+			public boolean hasEffect(ItemStack itemstack) {
+				return true;
+			}
 		}.setRegistryName("crimson_axe"));
 	}
 }

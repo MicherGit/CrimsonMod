@@ -39,10 +39,10 @@
         "value": "CUSTOM:EmptyPlains"
       },
       {
-        "value": "plains"
+        "value": "CUSTOM:EmptyPlains"
       }
     ],
-    "worldGenType": "Normal world gen",
+    "worldGenType": "End like gen",
     "mainFillerBlock": {
       "value": "CUSTOM:Voidblock"
     },
@@ -50,7 +50,7 @@
       "value": "Blocks.FLOWING_LAVA"
     },
     "airColor": {
-      "value": -10092544,
+      "value": -13434880,
       "falpha": 0.0
     },
     "canRespawnHere": false,

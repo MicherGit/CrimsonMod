@@ -47,6 +47,10 @@ public class InfinitepowerModElements {
 	public final List<Supplier<Enchantment>> enchantments = new ArrayList<>();
 	public static Map<ResourceLocation, net.minecraft.util.SoundEvent> sounds = new HashMap<>();
 	public InfinitepowerModElements() {
+		sounds.put(new ResourceLocation("infinitepower", "movie_rise_up"),
+				new net.minecraft.util.SoundEvent(new ResourceLocation("infinitepower", "movie_rise_up")));
+		sounds.put(new ResourceLocation("infinitepower", "megalovania"),
+				new net.minecraft.util.SoundEvent(new ResourceLocation("infinitepower", "megalovania")));
 		try {
 			ModFileScanData modFileInfo = ModList.get().getModFileById("infinitepower").getFile().getScanResult();
 			Set<ModFileScanData.AnnotationData> annotations = modFileInfo.getAnnotations();

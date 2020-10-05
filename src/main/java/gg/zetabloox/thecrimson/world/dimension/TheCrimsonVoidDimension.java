@@ -25,16 +25,13 @@ import net.minecraft.world.gen.layer.traits.IC0Transformer;
 import net.minecraft.world.gen.layer.ZoomLayer;
 import net.minecraft.world.gen.layer.Layer;
 import net.minecraft.world.gen.layer.IslandLayer;
-import net.minecraft.world.gen.feature.ProbabilityConfig;
-import net.minecraft.world.gen.carver.CaveWorldCarver;
 import net.minecraft.world.gen.area.LazyArea;
 import net.minecraft.world.gen.area.IAreaFactory;
-import net.minecraft.world.gen.OverworldGenSettings;
-import net.minecraft.world.gen.OverworldChunkGenerator;
 import net.minecraft.world.gen.LazyAreaLayerContext;
 import net.minecraft.world.gen.INoiseRandom;
 import net.minecraft.world.gen.IExtendedNoiseRandom;
-import net.minecraft.world.gen.GenerationStage;
+import net.minecraft.world.gen.EndGenerationSettings;
+import net.minecraft.world.gen.EndChunkGenerator;
 import net.minecraft.world.gen.ChunkGenerator;
 import net.minecraft.world.dimension.DimensionType;
 import net.minecraft.world.dimension.Dimension;
@@ -129,7 +126,7 @@ public class TheCrimsonVoidDimension extends InfinitepowerModElements.ModElement
 				ForgeRegistries.BIOMES.getValue(new ResourceLocation("infinitepower:empty_plains")),
 				ForgeRegistries.BIOMES.getValue(new ResourceLocation("infinitepower:empty_plains")),
 				ForgeRegistries.BIOMES.getValue(new ResourceLocation("infinitepower:empty_plains")),
-				ForgeRegistries.BIOMES.getValue(new ResourceLocation("plains")),};
+				ForgeRegistries.BIOMES.getValue(new ResourceLocation("infinitepower:empty_plains")),};
 	}
 
 	@Override
@@ -681,7 +678,7 @@ public class TheCrimsonVoidDimension extends InfinitepowerModElements.ModElement
 		@Override
 		@OnlyIn(Dist.CLIENT)
 		public Vec3d getFogColor(float cangle, float ticks) {
-			return new Vec3d(0.4, 0, 0);
+			return new Vec3d(0.2, 0, 0);
 		}
 
 		@Override
@@ -739,9 +736,9 @@ public class TheCrimsonVoidDimension extends InfinitepowerModElements.ModElement
 		}
 	}
 
-	public static class ChunkProviderModded extends OverworldChunkGenerator {
+	public static class ChunkProviderModded extends EndChunkGenerator {
 		public ChunkProviderModded(IWorld world, BiomeProvider provider) {
-			super(world, provider, new OverworldGenSettings() {
+			super(world, provider, new EndGenerationSettings() {
 				public BlockState getDefaultBlock() {
 					return VoidblockBlock.block.getDefaultState();
 				}
@@ -750,11 +747,7 @@ public class TheCrimsonVoidDimension extends InfinitepowerModElements.ModElement
 					return Blocks.LAVA.getDefaultState();
 				}
 			});
-			this.randomSeed.skip(5349);
-		}
-
-		@Override
-		public void spawnMobs(ServerWorld worldIn, boolean spawnHostileMobs, boolean spawnPeacefulMobs) {
+			this.randomSeed.skip(3946);
 		}
 	}
 
@@ -767,22 +760,9 @@ public class TheCrimsonVoidDimension extends InfinitepowerModElements.ModElement
 
 	public static class BiomeProviderCustom extends BiomeProvider {
 		private Layer genBiomes;
-		private static boolean biomesPatched = false;
 		public BiomeProviderCustom(World world) {
 			super(new HashSet<Biome>(Arrays.asList(dimensionBiomes)));
 			this.genBiomes = getBiomeLayer(world.getSeed());
-			if (!biomesPatched) {
-				for (Biome biome : this.biomes) {
-					biome.addCarver(GenerationStage.Carving.AIR, Biome.createCarver(new CaveWorldCarver(ProbabilityConfig::deserialize, 256) {
-						{
-							carvableBlocks = ImmutableSet.of(VoidblockBlock.block.getDefaultState().getBlock(),
-									biome.getSurfaceBuilder().getConfig().getTop().getBlock(),
-									biome.getSurfaceBuilder().getConfig().getUnder().getBlock());
-						}
-					}, new ProbabilityConfig(0.14285715f)));
-				}
-				biomesPatched = true;
-			}
 		}
 
 		public Biome getNoiseBiome(int x, int y, int z) {

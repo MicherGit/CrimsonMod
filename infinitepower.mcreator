@@ -773,10 +773,56 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "crimsontale"
+    },
+    {
+      "name": "BedrockStick",
+      "type": "item",
+      "sortid": 149,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "bedrock_stick"
+    },
+    {
+      "name": "MusicDiscMegalovaniaItemInHandTick",
+      "type": "procedure",
+      "sortid": 150,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "music_disc_megalovania_item_in_hand_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "MusicDiscMegalovania",
+      "type": "musicdisc",
+      "sortid": 150,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "music_disc_megalovania"
     }
   ],
   "variable_elements": [],
-  "sound_elements": [],
+  "sound_elements": [
+    {
+      "name": "movie_rise_up",
+      "file": "thefatrat_-_rise_up_orchestral_esl_2019_-_copy",
+      "category": "record"
+    },
+    {
+      "name": "megalovania",
+      "file": "mus_zz_megalovania",
+      "category": "master"
+    }
+  ],
   "language_map": {
     "en_us": {
       "item.infinitepower.quartz_axe": "Quartz Axe",
@@ -822,6 +868,7 @@
       "item.crimson.sapphire_sword": "Sapphire Sword",
       "item.crimson.void_shadow_armor_chestplate": "VoidShadow Chestplate",
       "item.crimson.crimson_pickaxe": "Crimson Pickaxe",
+      "item.infinitepower.music_disc_megalovania": "Music Disc",
       "block.crimson.void_shadow_ore_block": "Block of VoidShadow",
       "item.infinitepower.quartz_armor_helmet": "Quartz Helmet",
       "item.crimson.quartz_pickaxe": "Quartz Pickaxe",
@@ -834,6 +881,7 @@
       "block.infinitepower.crimson_ore_block": "Block of Crimson",
       "item.crimson.quartz_hoe": "Quartz Hoe",
       "entity.infinitepower.herobrine": "Herobrine",
+      "item.infinitepower.music_disc_megalovania.desc": "Toby Fox - Megalovania",
       "item.infinitepower.herobrine": "Herobrine Spawn Egg",
       "item.crimson.quartz_armor_boots": "Quartz Boots",
       "item.crimson.crimson_armor_leggings": "Crimson Leggings",
@@ -852,6 +900,7 @@
       "item.crimson.the_crimson_void": "Voider",
       "item.infinitepower.sapphire_sword": "Sapphire Sword",
       "item.crimson.crimson_armor_chestplate": "Crimson Chestplate",
+      "item.infinitepower.bedrock_stick": "Bedrock Stick",
       "item.crimson.quartz_axe": "Quartz Axe",
       "item.infinitepower.void_shadow_armor_boots": "VoidShadow Boots",
       "entity.crimson.herobrine": "Herobrine",
@@ -883,7 +932,7 @@
   "workspaceSettings": {
     "modid": "infinitepower",
     "modName": "The Crimson",
-    "version": "0.3.0rc2",
+    "version": "0.4.0dv",
     "description": "Crimsontale mod for Minecraft 1.15.2",
     "author": "Zetabloox",
     "websiteURL": "https://mcreator.net",

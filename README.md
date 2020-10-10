@@ -17,6 +17,6 @@ How to run / compile - The quick way
 
 How to edit
 1) Download MCreator from here https://mcreator.net/download, I am using 2020.4
-2) Click Clone Remote workspace, this menu should show up 
+2) Click Clone Remote workspace, this menu should show up https://github.com/MicherGit/CrimsonMod/raw/master/mcr_clone.PNG
 3) Paste this in to Remote Git repository https://github.com/MicherGit/CrimsonMod.git and log in to Github
 4) Click Set Up Remote Workspace, and you should be able to view the mod source as it was intended

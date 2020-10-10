@@ -808,6 +808,15 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "music_disc_megalovania"
+    },
+    {
+      "name": "BedrockSword",
+      "type": "tool",
+      "sortid": 151,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "bedrock_sword"
     }
   ],
   "variable_elements": [],
@@ -853,6 +862,7 @@
       "item.infinitepower.quartz_sword": "Quartz Sword",
       "item.crimson.quartz_sword": "Quartz Sword",
       "item.infinitepower.quartz_shovel": "Quartz Shovel",
+      "item.infinitepower.bedrock_sword": "Bedrock Sword",
       "item.infinitepower.crimson_shovel": "Crimson Shovel",
       "item.infinitepower.crimson_armor_chestplate": "Crimson Chestplate",
       "item.crimson.quartz_shovel": "Quartz Shovel",
@@ -860,8 +870,8 @@
       "item.crimson.crimson_armor_helmet": "Crimson Helmet",
       "item.infinitepower.sapphire_armor_boots": "Sapphire Boots",
       "item.infinitepower.void_shadow_ingot": "VoidShadow",
-      "itemGroup.tabcrimsontale": "The Crimson",
       "item.infinitepower.void_shadow_armor_helmet": "VoidShadow Helmet",
+      "itemGroup.tabcrimsontale": "The Crimson",
       "block.crimson.crimson_ore_block": "Block of Crimson",
       "item.infinitepower.sapphire_axe": "Sapphire Axe",
       "item.infinitepower.crimson_armor_helmet": "Crimson Helmet",
@@ -932,7 +942,7 @@
   "workspaceSettings": {
     "modid": "infinitepower",
     "modName": "The Crimson",
-    "version": "0.4.0dv",
+    "version": "0.4.0dv_unreleased",
     "description": "Crimsontale mod for Minecraft 1.15.2",
     "author": "Zetabloox",
     "websiteURL": "https://mcreator.net",

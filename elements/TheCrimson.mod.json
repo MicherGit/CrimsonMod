@@ -5,10 +5,10 @@
     "mobName": "The Crimson",
     "mobLabel": "",
     "mobModelName": "Slime",
-    "mobModelTexture": "blue_slime_texture.png",
-    "mobModelGlowTexture": "",
-    "modelWidth": 1.0,
-    "modelHeight": 1.0,
+    "mobModelTexture": "crimson.png",
+    "mobModelGlowTexture": "blueslimetest.png",
+    "modelWidth": 14.0,
+    "modelHeight": 14.0,
     "modelShadowSize": 0.5,
     "mountedYOffset": 0.0,
     "hasSpawnEgg": true,
@@ -21,7 +21,7 @@
       "falpha": 0.0
     },
     "creativeTab": {
-      "value": "MISC"
+      "value": "CUSTOM:Crimsontale"
     },
     "isBoss": true,
     "bossBarColor": "RED",

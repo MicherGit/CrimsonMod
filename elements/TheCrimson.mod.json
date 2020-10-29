@@ -6,7 +6,7 @@
     "mobLabel": "",
     "mobModelName": "Slime",
     "mobModelTexture": "crimson.png",
-    "mobModelGlowTexture": "blueslimetest.png",
+    "mobModelGlowTexture": "",
     "modelWidth": 14.0,
     "modelHeight": 14.0,
     "modelShadowSize": 0.5,

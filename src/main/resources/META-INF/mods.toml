@@ -3,10 +3,11 @@ loaderVersion="[31,)"
 
 [[mods]]
 modId="infinitepower"
-version="0.4.0dv_dv2"
+version="0.4.0dv_dv2mp"
 displayName="The Crimson"
 credits="Created using mod maker MCreator - https://mcreator.net/about"
-displayURL="https://mcreator.net"
+displayURL="https://github.com/MicherGit/CrimsonMod"
+logoFile="logo.png"
 authors="Zetabloox"
 description='''
 Crimsontale mod for Minecraft 1.15.2

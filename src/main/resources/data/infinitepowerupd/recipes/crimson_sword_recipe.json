@@ -1,0 +1,24 @@
+{
+  "group": "infinitepowerupd",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0",
+    "1",
+    "2"
+  ],
+  "key": {
+    "0": {
+      "item": "infinitepowerupd:crimson_gem"
+    },
+    "1": {
+      "item": "infinitepowerupd:crimson_gem"
+    },
+    "2": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "infinitepowerupd:crimson_sword",
+    "count": 1
+  }
+}

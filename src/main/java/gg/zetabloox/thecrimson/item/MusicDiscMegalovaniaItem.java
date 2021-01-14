@@ -18,13 +18,13 @@ import java.util.Map;
 import java.util.HashMap;
 
 import gg.zetabloox.thecrimson.procedures.MusicDiscMegalovaniaItemInHandTickProcedure;
-import gg.zetabloox.thecrimson.InfinitepowerModElements;
+import gg.zetabloox.thecrimson.InfinitepowerupdModElements;
 
-@InfinitepowerModElements.ModElement.Tag
-public class MusicDiscMegalovaniaItem extends InfinitepowerModElements.ModElement {
-	@ObjectHolder("infinitepower:music_disc_megalovania")
+@InfinitepowerupdModElements.ModElement.Tag
+public class MusicDiscMegalovaniaItem extends InfinitepowerupdModElements.ModElement {
+	@ObjectHolder("infinitepowerupd:music_disc_megalovania")
 	public static final Item block = null;
-	public MusicDiscMegalovaniaItem(InfinitepowerModElements instance) {
+	public MusicDiscMegalovaniaItem(InfinitepowerupdModElements instance) {
 		super(instance, 150);
 	}
 
@@ -34,7 +34,7 @@ public class MusicDiscMegalovaniaItem extends InfinitepowerModElements.ModElemen
 	}
 	public static class MusicDiscItemCustom extends MusicDiscItem {
 		public MusicDiscItemCustom() {
-			super(0, InfinitepowerModElements.sounds.get(new ResourceLocation("infinitepower:megalovania")),
+			super(0, InfinitepowerupdModElements.sounds.get(new ResourceLocation("infinitepowerupd:megalovania")),
 					new Item.Properties().group(ItemGroup.MISC).maxStackSize(1).rarity(Rarity.RARE));
 			setRegistryName("music_disc_megalovania");
 		}

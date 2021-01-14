@@ -1,0 +1,20 @@
+{
+  "movie_rise_up": {
+    "category": "record",
+    "sounds": [
+      {
+        "name": "infinitepowerupd:thefatrat_-_rise_up_orchestral_esl_2019_-_copy",
+        "stream": true
+      }
+    ]
+  },
+  "megalovania": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "infinitepowerupd:mus_zz_megalovania",
+        "stream": false
+      }
+    ]
+  }
+}

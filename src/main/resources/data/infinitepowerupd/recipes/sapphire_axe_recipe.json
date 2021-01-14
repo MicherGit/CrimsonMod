@@ -1,0 +1,30 @@
+{
+  "group": "infinitepowerupd",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "23",
+    " 5"
+  ],
+  "key": {
+    "0": {
+      "item": "infinitepowerupd:sapphire_gem"
+    },
+    "1": {
+      "item": "infinitepowerupd:sapphire_gem"
+    },
+    "2": {
+      "item": "infinitepowerupd:sapphire_gem"
+    },
+    "3": {
+      "item": "minecraft:stick"
+    },
+    "5": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "infinitepowerupd:sapphire_axe",
+    "count": 1
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "group": "infinitepowerupd",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0",
+    "1",
+    "2"
+  ],
+  "key": {
+    "0": {
+      "item": "infinitepowerupd:void_shadow_ingot"
+    },
+    "1": {
+      "item": "infinitepowerupd:void_shadow_ingot"
+    },
+    "2": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "infinitepowerupd:void_shadow_sword",
+    "count": 1
+  }
+}

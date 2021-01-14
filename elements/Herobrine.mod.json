@@ -1,5 +1,5 @@
 {
-  "_fv": 10,
+  "_fv": 15,
   "_type": "mob",
   "definition": {
     "mobName": "Herobrine",
@@ -47,6 +47,8 @@
     "mobBehaviourType": "Mob",
     "mobCreatureType": "UNDEAD",
     "attackStrength": 10,
+    "attackKnockback": 0.0,
+    "knockbackResistance": 0.0,
     "movementSpeed": 0.6,
     "armorBaseValue": 5.0,
     "trackingRange": 64,

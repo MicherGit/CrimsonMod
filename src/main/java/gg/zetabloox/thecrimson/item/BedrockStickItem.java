@@ -3,18 +3,19 @@ package gg.zetabloox.thecrimson.item;
 
 import net.minecraftforge.registries.ObjectHolder;
 
+import net.minecraft.item.Rarity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.block.BlockState;
 
-import gg.zetabloox.thecrimson.InfinitepowerModElements;
+import gg.zetabloox.thecrimson.InfinitepowerupdModElements;
 
-@InfinitepowerModElements.ModElement.Tag
-public class BedrockStickItem extends InfinitepowerModElements.ModElement {
-	@ObjectHolder("infinitepower:bedrock_stick")
+@InfinitepowerupdModElements.ModElement.Tag
+public class BedrockStickItem extends InfinitepowerupdModElements.ModElement {
+	@ObjectHolder("infinitepowerupd:bedrock_stick")
 	public static final Item block = null;
-	public BedrockStickItem(InfinitepowerModElements instance) {
+	public BedrockStickItem(InfinitepowerupdModElements instance) {
 		super(instance, 149);
 	}
 
@@ -24,7 +25,7 @@ public class BedrockStickItem extends InfinitepowerModElements.ModElement {
 	}
 	public static class ItemCustom extends Item {
 		public ItemCustom() {
-			super(new Item.Properties().group(ItemGroup.MATERIALS).maxStackSize(64));
+			super(new Item.Properties().group(ItemGroup.MATERIALS).maxStackSize(64).rarity(Rarity.COMMON));
 			setRegistryName("bedrock_stick");
 		}
 

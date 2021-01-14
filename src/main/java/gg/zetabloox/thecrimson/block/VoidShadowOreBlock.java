@@ -2,21 +2,24 @@
 package gg.zetabloox.thecrimson.block;
 
 import net.minecraftforge.registries.ObjectHolder;
-import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.event.world.BiomeLoadingEvent;
 import net.minecraftforge.common.ToolType;
+import net.minecraftforge.common.MinecraftForge;
 
-import net.minecraft.world.storage.loot.LootContext;
-import net.minecraft.world.gen.placement.Placement;
-import net.minecraft.world.gen.placement.CountRangeConfig;
+import net.minecraft.world.gen.feature.template.IRuleTestType;
+import net.minecraft.world.gen.feature.template.BlockMatchRuleTest;
 import net.minecraft.world.gen.feature.OreFeatureConfig;
 import net.minecraft.world.gen.feature.OreFeature;
 import net.minecraft.world.gen.GenerationStage;
 import net.minecraft.world.gen.ChunkGenerator;
-import net.minecraft.world.dimension.DimensionType;
-import net.minecraft.world.biome.Biome;
-import net.minecraft.world.IWorld;
+import net.minecraft.world.World;
+import net.minecraft.world.ISeedReader;
+import net.minecraft.util.registry.Registry;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.ResourceLocation;
+import net.minecraft.util.RegistryKey;
+import net.minecraft.loot.LootContext;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
 import net.minecraft.item.BlockItem;
@@ -30,16 +33,16 @@ import java.util.Random;
 import java.util.List;
 import java.util.Collections;
 
-import gg.zetabloox.thecrimson.world.dimension.TheCrimsonVoidDimension;
 import gg.zetabloox.thecrimson.itemgroup.CrimsontaleItemGroup;
-import gg.zetabloox.thecrimson.InfinitepowerModElements;
+import gg.zetabloox.thecrimson.InfinitepowerupdModElements;
 
-@InfinitepowerModElements.ModElement.Tag
-public class VoidShadowOreBlock extends InfinitepowerModElements.ModElement {
-	@ObjectHolder("infinitepower:void_shadow_ore")
+@InfinitepowerupdModElements.ModElement.Tag
+public class VoidShadowOreBlock extends InfinitepowerupdModElements.ModElement {
+	@ObjectHolder("infinitepowerupd:void_shadow_ore")
 	public static final Block block = null;
-	public VoidShadowOreBlock(InfinitepowerModElements instance) {
+	public VoidShadowOreBlock(InfinitepowerupdModElements instance) {
 		super(instance, 119);
+		MinecraftForge.EVENT_BUS.register(this);
 	}
 
 	@Override
@@ -50,7 +53,7 @@ public class VoidShadowOreBlock extends InfinitepowerModElements.ModElement {
 	}
 	public static class CustomBlock extends Block {
 		public CustomBlock() {
-			super(Block.Properties.create(Material.ROCK).sound(SoundType.STONE).hardnessAndResistance(30f, 31.547867224009668f).lightValue(0)
+			super(Block.Properties.create(Material.ROCK).sound(SoundType.STONE).hardnessAndResistance(30f, 31.547867224009668f).setLightLevel(s -> 0)
 					.harvestLevel(10).harvestTool(ToolType.PICKAXE));
 			setRegistryName("void_shadow_ore");
 		}
@@ -63,30 +66,34 @@ public class VoidShadowOreBlock extends InfinitepowerModElements.ModElement {
 			return Collections.singletonList(new ItemStack(this, 1));
 		}
 	}
-	@Override
-	public void init(FMLCommonSetupEvent event) {
-		for (Biome biome : ForgeRegistries.BIOMES.getValues()) {
-			biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, new OreFeature(OreFeatureConfig::deserialize) {
-				@Override
-				public boolean place(IWorld world, ChunkGenerator generator, Random rand, BlockPos pos, OreFeatureConfig config) {
-					DimensionType dimensionType = world.getDimension().getType();
-					boolean dimensionCriteria = false;
-					if (dimensionType == DimensionType.OVERWORLD)
-						dimensionCriteria = true;
-					if (dimensionType == TheCrimsonVoidDimension.type)
-						dimensionCriteria = true;
-					if (!dimensionCriteria)
-						return false;
-					return super.place(world, generator, rand, pos, config);
-				}
-			}.withConfiguration(new OreFeatureConfig(OreFeatureConfig.FillerBlockType.create("void_shadow_ore", "void_shadow_ore", blockAt -> {
+	@SubscribeEvent
+	public void addFeatureToBiomes(BiomeLoadingEvent event) {
+		event.getGeneration().getFeatures(GenerationStage.Decoration.UNDERGROUND_ORES).add(() -> new OreFeature(OreFeatureConfig.CODEC) {
+			@Override
+			public boolean generate(ISeedReader world, ChunkGenerator generator, Random rand, BlockPos pos, OreFeatureConfig config) {
+				RegistryKey<World> dimensionType = world.getWorld().getDimensionKey();
+				boolean dimensionCriteria = false;
+				if (dimensionType == World.OVERWORLD)
+					dimensionCriteria = true;
+				if (dimensionType == RegistryKey.getOrCreateKey(Registry.WORLD_KEY, new ResourceLocation("infinitepowerupd:the_crimson_void")))
+					dimensionCriteria = true;
+				if (!dimensionCriteria)
+					return false;
+				return super.generate(world, generator, rand, pos, config);
+			}
+		}.withConfiguration(new OreFeatureConfig(new BlockMatchRuleTest(Blocks.STONE.getDefaultState().getBlock()) {
+			public boolean test(BlockState blockAt, Random random) {
 				boolean blockCriteria = false;
 				if (blockAt.getBlock() == Blocks.STONE.getDefaultState().getBlock())
 					blockCriteria = true;
 				if (blockAt.getBlock() == VoidblockBlock.block.getDefaultState().getBlock())
 					blockCriteria = true;
 				return blockCriteria;
-			}), block.getDefaultState(), 0)).withPlacement(Placement.COUNT_RANGE.configure(new CountRangeConfig(1, 1, 1, 7))));
-		}
+			}
+
+			protected IRuleTestType<?> getType() {
+				return IRuleTestType.BLOCK_MATCH;
+			}
+		}, block.getDefaultState(), 0)).range(7).square().func_242731_b(1));
 	}
 }

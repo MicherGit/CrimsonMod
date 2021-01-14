@@ -1,0 +1,12 @@
+{
+  "group": "infinitepowerupd",
+  "type": "minecraft:smelting",
+  "experience": 7,
+  "cookingtime": 200,
+  "ingredient": {
+    "item": "infinitepowerupd:void_shadow_ore"
+  },
+  "result": {
+    "item": "infinitepowerupd:void_shadow_ingot"
+  }
+}

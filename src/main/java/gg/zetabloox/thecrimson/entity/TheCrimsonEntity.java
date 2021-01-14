@@ -7,14 +7,18 @@ import net.minecraftforge.fml.network.FMLPlayMessages;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.client.registry.RenderingRegistry;
+import net.minecraftforge.fml.DeferredWorkQueue;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.event.world.BiomeLoadingEvent;
+import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.common.ForgeMod;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.server.ServerBossInfo;
 import net.minecraft.world.gen.Heightmap;
-import net.minecraft.world.biome.Biome;
+import net.minecraft.world.biome.MobSpawnInfo;
 import net.minecraft.world.World;
 import net.minecraft.world.IWorldReader;
 import net.minecraft.world.BossInfo;
@@ -36,7 +40,10 @@ import net.minecraft.entity.ai.goal.MeleeAttackGoal;
 import net.minecraft.entity.ai.goal.LookRandomlyGoal;
 import net.minecraft.entity.ai.goal.HurtByTargetGoal;
 import net.minecraft.entity.ai.controller.FlyingMovementController;
-import net.minecraft.entity.SharedMonsterAttributes;
+import net.minecraft.entity.ai.attributes.GlobalEntityTypeAttributes;
+import net.minecraft.entity.ai.attributes.Attributes;
+import net.minecraft.entity.ai.attributes.AttributeModifierMap;
+import net.minecraft.entity.MobEntity;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.EntitySpawnPlacementRegistry;
 import net.minecraft.entity.EntityClassification;
@@ -47,14 +54,15 @@ import net.minecraft.client.renderer.entity.MobRenderer;
 import net.minecraft.block.BlockState;
 
 import gg.zetabloox.thecrimson.itemgroup.CrimsontaleItemGroup;
-import gg.zetabloox.thecrimson.InfinitepowerModElements;
+import gg.zetabloox.thecrimson.InfinitepowerupdModElements;
 
-@InfinitepowerModElements.ModElement.Tag
-public class TheCrimsonEntity extends InfinitepowerModElements.ModElement {
+@InfinitepowerupdModElements.ModElement.Tag
+public class TheCrimsonEntity extends InfinitepowerupdModElements.ModElement {
 	public static EntityType entity = null;
-	public TheCrimsonEntity(InfinitepowerModElements instance) {
+	public TheCrimsonEntity(InfinitepowerupdModElements instance) {
 		super(instance, 152);
-		FMLJavaModLoadingContext.get().getModEventBus().register(this);
+		FMLJavaModLoadingContext.get().getModEventBus().register(new ModelRegisterHandler());
+		MinecraftForge.EVENT_BUS.register(this);
 	}
 
 	@Override
@@ -64,32 +72,46 @@ public class TheCrimsonEntity extends InfinitepowerModElements.ModElement {
 						.build("the_crimson").setRegistryName("the_crimson");
 		elements.entities.add(() -> entity);
 		elements.items.add(() -> new SpawnEggItem(entity, -16777216, -13434880, new Item.Properties().group(CrimsontaleItemGroup.tab))
-				.setRegistryName("the_crimson"));
+				.setRegistryName("the_crimson_spawn_egg"));
+	}
+
+	@SubscribeEvent
+	public void addFeatureToBiomes(BiomeLoadingEvent event) {
+		boolean biomeCriteria = false;
+		if (new ResourceLocation("the_void").equals(event.getName()))
+			biomeCriteria = true;
+		if (!biomeCriteria)
+			return;
+		event.getSpawns().getSpawner(EntityClassification.MONSTER).add(new MobSpawnInfo.Spawners(entity, 1, 1, 1));
 	}
 
 	@Override
 	public void init(FMLCommonSetupEvent event) {
-		for (Biome biome : ForgeRegistries.BIOMES.getValues()) {
-			boolean biomeCriteria = false;
-			if (ForgeRegistries.BIOMES.getKey(biome).equals(new ResourceLocation("the_void")))
-				biomeCriteria = true;
-			if (!biomeCriteria)
-				continue;
-			biome.getSpawns(EntityClassification.MONSTER).add(new Biome.SpawnListEntry(entity, 1, 1, 1));
-		}
+		DeferredWorkQueue.runLater(this::setupAttributes);
 		EntitySpawnPlacementRegistry.register(entity, EntitySpawnPlacementRegistry.PlacementType.ON_GROUND, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES,
 				MonsterEntity::canMonsterSpawn);
 	}
-
-	@SubscribeEvent
-	@OnlyIn(Dist.CLIENT)
-	public void registerModels(ModelRegistryEvent event) {
-		RenderingRegistry.registerEntityRenderingHandler(entity, renderManager -> new MobRenderer(renderManager, new SlimeModel(0), 0.5f) {
-			@Override
-			public ResourceLocation getEntityTexture(Entity entity) {
-				return new ResourceLocation("infinitepower:textures/crimson.png");
-			}
-		});
+	private static class ModelRegisterHandler {
+		@SubscribeEvent
+		@OnlyIn(Dist.CLIENT)
+		public void registerModels(ModelRegistryEvent event) {
+			RenderingRegistry.registerEntityRenderingHandler(entity, renderManager -> new MobRenderer(renderManager, new SlimeModel(0), 0.5f) {
+				@Override
+				public ResourceLocation getEntityTexture(Entity entity) {
+					return new ResourceLocation("infinitepowerupd:textures/crimson.png");
+				}
+			});
+		}
+	}
+	private void setupAttributes() {
+		AttributeModifierMap.MutableAttribute ammma = MobEntity.func_233666_p_();
+		ammma = ammma.createMutableAttribute(Attributes.MOVEMENT_SPEED, 5);
+		ammma = ammma.createMutableAttribute(Attributes.MAX_HEALTH, 101);
+		ammma = ammma.createMutableAttribute(Attributes.ARMOR, 0);
+		ammma = ammma.createMutableAttribute(Attributes.ATTACK_DAMAGE, 20);
+		ammma = ammma.createMutableAttribute(Attributes.FLYING_SPEED, 5);
+		ammma = ammma.createMutableAttribute(ForgeMod.SWIM_SPEED.get(), 5);
+		GlobalEntityTypeAttributes.put(entity, ammma.create());
 	}
 	public static class CustomEntity extends MonsterEntity {
 		public CustomEntity(FMLPlayMessages.SpawnEntity packet, World world) {
@@ -154,23 +176,6 @@ public class TheCrimsonEntity extends InfinitepowerModElements.ModElement {
 			if (source == DamageSource.FALL)
 				return false;
 			return super.attackEntityFrom(source, amount);
-		}
-
-		@Override
-		protected void registerAttributes() {
-			super.registerAttributes();
-			if (this.getAttribute(SharedMonsterAttributes.MOVEMENT_SPEED) != null)
-				this.getAttribute(SharedMonsterAttributes.MOVEMENT_SPEED).setBaseValue(5);
-			if (this.getAttribute(SharedMonsterAttributes.MAX_HEALTH) != null)
-				this.getAttribute(SharedMonsterAttributes.MAX_HEALTH).setBaseValue(101);
-			if (this.getAttribute(SharedMonsterAttributes.ARMOR) != null)
-				this.getAttribute(SharedMonsterAttributes.ARMOR).setBaseValue(0);
-			if (this.getAttribute(SharedMonsterAttributes.ATTACK_DAMAGE) == null)
-				this.getAttributes().registerAttribute(SharedMonsterAttributes.ATTACK_DAMAGE);
-			this.getAttribute(SharedMonsterAttributes.ATTACK_DAMAGE).setBaseValue(20);
-			if (this.getAttribute(SharedMonsterAttributes.FLYING_SPEED) == null)
-				this.getAttributes().registerAttribute(SharedMonsterAttributes.FLYING_SPEED);
-			this.getAttribute(SharedMonsterAttributes.FLYING_SPEED).setBaseValue(5);
 		}
 
 		@Override

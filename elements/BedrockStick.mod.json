@@ -1,11 +1,12 @@
 {
-  "_fv": 10,
+  "_fv": 15,
   "_type": "item",
   "definition": {
     "renderType": 0,
     "texture": "bedrocksword",
     "customModelName": "Normal",
     "name": "Bedrock Stick",
+    "rarity": "COMMON",
     "creativeTab": {
       "value": "MATERIALS"
     },

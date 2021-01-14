@@ -3,18 +3,19 @@ package gg.zetabloox.thecrimson.item;
 
 import net.minecraftforge.registries.ObjectHolder;
 
+import net.minecraft.item.Rarity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
 import net.minecraft.block.BlockState;
 
 import gg.zetabloox.thecrimson.itemgroup.CrimsontaleItemGroup;
-import gg.zetabloox.thecrimson.InfinitepowerModElements;
+import gg.zetabloox.thecrimson.InfinitepowerupdModElements;
 
-@InfinitepowerModElements.ModElement.Tag
-public class VoidShadowIngotItem extends InfinitepowerModElements.ModElement {
-	@ObjectHolder("infinitepower:void_shadow_ingot")
+@InfinitepowerupdModElements.ModElement.Tag
+public class VoidShadowIngotItem extends InfinitepowerupdModElements.ModElement {
+	@ObjectHolder("infinitepowerupd:void_shadow_ingot")
 	public static final Item block = null;
-	public VoidShadowIngotItem(InfinitepowerModElements instance) {
+	public VoidShadowIngotItem(InfinitepowerupdModElements instance) {
 		super(instance, 118);
 	}
 
@@ -24,7 +25,7 @@ public class VoidShadowIngotItem extends InfinitepowerModElements.ModElement {
 	}
 	public static class ItemCustom extends Item {
 		public ItemCustom() {
-			super(new Item.Properties().group(CrimsontaleItemGroup.tab).maxStackSize(64));
+			super(new Item.Properties().group(CrimsontaleItemGroup.tab).maxStackSize(64).rarity(Rarity.COMMON));
 			setRegistryName("void_shadow_ingot");
 		}
 

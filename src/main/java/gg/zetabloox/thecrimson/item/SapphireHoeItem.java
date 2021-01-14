@@ -9,13 +9,13 @@ import net.minecraft.item.Item;
 import net.minecraft.item.IItemTier;
 import net.minecraft.item.HoeItem;
 
-import gg.zetabloox.thecrimson.InfinitepowerModElements;
+import gg.zetabloox.thecrimson.InfinitepowerupdModElements;
 
-@InfinitepowerModElements.ModElement.Tag
-public class SapphireHoeItem extends InfinitepowerModElements.ModElement {
-	@ObjectHolder("infinitepower:sapphire_hoe")
+@InfinitepowerupdModElements.ModElement.Tag
+public class SapphireHoeItem extends InfinitepowerupdModElements.ModElement {
+	@ObjectHolder("infinitepowerupd:sapphire_hoe")
 	public static final Item block = null;
-	public SapphireHoeItem(InfinitepowerModElements instance) {
+	public SapphireHoeItem(InfinitepowerupdModElements instance) {
 		super(instance, 107);
 	}
 
@@ -45,7 +45,7 @@ public class SapphireHoeItem extends InfinitepowerModElements.ModElement {
 			public Ingredient getRepairMaterial() {
 				return Ingredient.EMPTY;
 			}
-		}, -3f, new Item.Properties().group(ItemGroup.TOOLS)) {
+		}, 0, -3f, new Item.Properties().group(ItemGroup.TOOLS)) {
 		}.setRegistryName("sapphire_hoe"));
 	}
 }

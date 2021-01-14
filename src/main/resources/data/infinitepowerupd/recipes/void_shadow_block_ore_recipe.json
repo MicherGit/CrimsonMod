@@ -1,0 +1,13 @@
+{
+  "group": "infinitepowerupd",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "infinitepowerupd:void_shadow_ore_block"
+    }
+  ],
+  "result": {
+    "item": "infinitepowerupd:void_shadow_ingot",
+    "count": 9
+  }
+}

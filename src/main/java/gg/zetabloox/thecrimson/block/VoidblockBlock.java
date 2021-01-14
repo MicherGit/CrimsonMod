@@ -3,7 +3,7 @@ package gg.zetabloox.thecrimson.block;
 
 import net.minecraftforge.registries.ObjectHolder;
 
-import net.minecraft.world.storage.loot.LootContext;
+import net.minecraft.loot.LootContext;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
 import net.minecraft.item.BlockItemUseContext;
@@ -17,13 +17,13 @@ import java.util.List;
 import java.util.Collections;
 
 import gg.zetabloox.thecrimson.itemgroup.CrimsontaleItemGroup;
-import gg.zetabloox.thecrimson.InfinitepowerModElements;
+import gg.zetabloox.thecrimson.InfinitepowerupdModElements;
 
-@InfinitepowerModElements.ModElement.Tag
-public class VoidblockBlock extends InfinitepowerModElements.ModElement {
-	@ObjectHolder("infinitepower:voidblock")
+@InfinitepowerupdModElements.ModElement.Tag
+public class VoidblockBlock extends InfinitepowerupdModElements.ModElement {
+	@ObjectHolder("infinitepowerupd:voidblock")
 	public static final Block block = null;
-	public VoidblockBlock(InfinitepowerModElements instance) {
+	public VoidblockBlock(InfinitepowerupdModElements instance) {
 		super(instance, 96);
 	}
 
@@ -35,13 +35,13 @@ public class VoidblockBlock extends InfinitepowerModElements.ModElement {
 	}
 	public static class CustomBlock extends Block {
 		public CustomBlock() {
-			super(Block.Properties.create(Material.ROCK).sound(SoundType.METAL).hardnessAndResistance(50f, 10f).lightValue(0));
+			super(Block.Properties.create(Material.ROCK).sound(SoundType.METAL).hardnessAndResistance(50f, 10f).setLightLevel(s -> 0));
 			setRegistryName("voidblock");
 		}
 
 		@Override
 		public boolean isReplaceable(BlockState state, BlockItemUseContext context) {
-			return true;
+			return context.getItem().getItem() != this.asItem();
 		}
 
 		@Override

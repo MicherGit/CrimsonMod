@@ -1,11 +1,12 @@
 {
-  "_fv": 10,
+  "_fv": 15,
   "_type": "item",
   "definition": {
     "renderType": 0,
     "texture": "voidshadow_ingot",
     "customModelName": "Normal",
     "name": "VoidShadow",
+    "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:Crimsontale"
     },

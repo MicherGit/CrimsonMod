@@ -12,13 +12,13 @@ import net.minecraft.item.Item;
 import net.minecraft.item.IItemTier;
 import net.minecraft.item.AxeItem;
 
-import gg.zetabloox.thecrimson.InfinitepowerModElements;
+import gg.zetabloox.thecrimson.InfinitepowerupdModElements;
 
-@InfinitepowerModElements.ModElement.Tag
-public class CrimsonAxeItem extends InfinitepowerModElements.ModElement {
-	@ObjectHolder("infinitepower:crimson_axe")
+@InfinitepowerupdModElements.ModElement.Tag
+public class CrimsonAxeItem extends InfinitepowerupdModElements.ModElement {
+	@ObjectHolder("infinitepowerupd:crimson_axe")
 	public static final Item block = null;
-	public CrimsonAxeItem(InfinitepowerModElements instance) {
+	public CrimsonAxeItem(InfinitepowerupdModElements instance) {
 		super(instance, 65);
 	}
 

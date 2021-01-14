@@ -9,13 +9,13 @@ import net.minecraft.item.Item;
 import net.minecraft.item.IItemTier;
 import net.minecraft.item.AxeItem;
 
-import gg.zetabloox.thecrimson.InfinitepowerModElements;
+import gg.zetabloox.thecrimson.InfinitepowerupdModElements;
 
-@InfinitepowerModElements.ModElement.Tag
-public class VoidShadowAxeItem extends InfinitepowerModElements.ModElement {
-	@ObjectHolder("infinitepower:void_shadow_axe")
+@InfinitepowerupdModElements.ModElement.Tag
+public class VoidShadowAxeItem extends InfinitepowerupdModElements.ModElement {
+	@ObjectHolder("infinitepowerupd:void_shadow_axe")
 	public static final Item block = null;
-	public VoidShadowAxeItem(InfinitepowerModElements instance) {
+	public VoidShadowAxeItem(InfinitepowerupdModElements instance) {
 		super(instance, 125);
 	}
 

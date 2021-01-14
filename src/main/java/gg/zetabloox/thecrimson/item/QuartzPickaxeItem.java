@@ -9,13 +9,13 @@ import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.item.IItemTier;
 
-import gg.zetabloox.thecrimson.InfinitepowerModElements;
+import gg.zetabloox.thecrimson.InfinitepowerupdModElements;
 
-@InfinitepowerModElements.ModElement.Tag
-public class QuartzPickaxeItem extends InfinitepowerModElements.ModElement {
-	@ObjectHolder("infinitepower:quartz_pickaxe")
+@InfinitepowerupdModElements.ModElement.Tag
+public class QuartzPickaxeItem extends InfinitepowerupdModElements.ModElement {
+	@ObjectHolder("infinitepowerupd:quartz_pickaxe")
 	public static final Item block = null;
-	public QuartzPickaxeItem(InfinitepowerModElements instance) {
+	public QuartzPickaxeItem(InfinitepowerupdModElements instance) {
 		super(instance, 79);
 	}
 

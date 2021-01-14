@@ -8,11 +8,11 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemGroup;
 
 import gg.zetabloox.thecrimson.item.CrimsonGemItem;
-import gg.zetabloox.thecrimson.InfinitepowerModElements;
+import gg.zetabloox.thecrimson.InfinitepowerupdModElements;
 
-@InfinitepowerModElements.ModElement.Tag
-public class CrimsontaleItemGroup extends InfinitepowerModElements.ModElement {
-	public CrimsontaleItemGroup(InfinitepowerModElements instance) {
+@InfinitepowerupdModElements.ModElement.Tag
+public class CrimsontaleItemGroup extends InfinitepowerupdModElements.ModElement {
+	public CrimsontaleItemGroup(InfinitepowerupdModElements instance) {
 		super(instance, 148);
 	}
 

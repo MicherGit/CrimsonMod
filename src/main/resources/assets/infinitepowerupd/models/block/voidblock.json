@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "infinitepowerupd:blocks/void",
+    "particle": "infinitepowerupd:blocks/void"
+  }
+}

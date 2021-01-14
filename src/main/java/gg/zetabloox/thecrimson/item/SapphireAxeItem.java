@@ -9,13 +9,13 @@ import net.minecraft.item.Item;
 import net.minecraft.item.IItemTier;
 import net.minecraft.item.AxeItem;
 
-import gg.zetabloox.thecrimson.InfinitepowerModElements;
+import gg.zetabloox.thecrimson.InfinitepowerupdModElements;
 
-@InfinitepowerModElements.ModElement.Tag
-public class SapphireAxeItem extends InfinitepowerModElements.ModElement {
-	@ObjectHolder("infinitepower:sapphire_axe")
+@InfinitepowerupdModElements.ModElement.Tag
+public class SapphireAxeItem extends InfinitepowerupdModElements.ModElement {
+	@ObjectHolder("infinitepowerupd:sapphire_axe")
 	public static final Item block = null;
-	public SapphireAxeItem(InfinitepowerModElements instance) {
+	public SapphireAxeItem(InfinitepowerupdModElements instance) {
 		super(instance, 104);
 	}
 

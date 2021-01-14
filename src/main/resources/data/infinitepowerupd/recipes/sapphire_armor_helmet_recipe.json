@@ -1,0 +1,29 @@
+{
+  "group": "infinitepowerupd",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "3 5"
+  ],
+  "key": {
+    "0": {
+      "item": "infinitepowerupd:sapphire_gem"
+    },
+    "1": {
+      "item": "infinitepowerupd:sapphire_gem"
+    },
+    "2": {
+      "item": "infinitepowerupd:sapphire_gem"
+    },
+    "3": {
+      "item": "infinitepowerupd:sapphire_gem"
+    },
+    "5": {
+      "item": "infinitepowerupd:sapphire_gem"
+    }
+  },
+  "result": {
+    "item": "infinitepowerupd:sapphire_armor_helmet",
+    "count": 1
+  }
+}

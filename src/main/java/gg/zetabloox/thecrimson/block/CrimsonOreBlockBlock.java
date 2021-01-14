@@ -4,7 +4,7 @@ package gg.zetabloox.thecrimson.block;
 import net.minecraftforge.registries.ObjectHolder;
 import net.minecraftforge.common.ToolType;
 
-import net.minecraft.world.storage.loot.LootContext;
+import net.minecraft.loot.LootContext;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
 import net.minecraft.item.BlockItem;
@@ -17,13 +17,13 @@ import java.util.List;
 import java.util.Collections;
 
 import gg.zetabloox.thecrimson.itemgroup.CrimsontaleItemGroup;
-import gg.zetabloox.thecrimson.InfinitepowerModElements;
+import gg.zetabloox.thecrimson.InfinitepowerupdModElements;
 
-@InfinitepowerModElements.ModElement.Tag
-public class CrimsonOreBlockBlock extends InfinitepowerModElements.ModElement {
-	@ObjectHolder("infinitepower:crimson_ore_block")
+@InfinitepowerupdModElements.ModElement.Tag
+public class CrimsonOreBlockBlock extends InfinitepowerupdModElements.ModElement {
+	@ObjectHolder("infinitepowerupd:crimson_ore_block")
 	public static final Block block = null;
-	public CrimsonOreBlockBlock(InfinitepowerModElements instance) {
+	public CrimsonOreBlockBlock(InfinitepowerupdModElements instance) {
 		super(instance, 141);
 	}
 
@@ -35,7 +35,7 @@ public class CrimsonOreBlockBlock extends InfinitepowerModElements.ModElement {
 	}
 	public static class CustomBlock extends Block {
 		public CustomBlock() {
-			super(Block.Properties.create(Material.IRON).sound(SoundType.METAL).hardnessAndResistance(5f, 10f).lightValue(0).harvestLevel(14)
+			super(Block.Properties.create(Material.IRON).sound(SoundType.METAL).hardnessAndResistance(5f, 10f).setLightLevel(s -> 0).harvestLevel(14)
 					.harvestTool(ToolType.PICKAXE));
 			setRegistryName("crimson_ore_block");
 		}

@@ -1,0 +1,42 @@
+{
+  "group": "infinitepowerupd",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "infinitepowerupd:sapphire_gem"
+    },
+    "1": {
+      "item": "infinitepowerupd:sapphire_gem"
+    },
+    "2": {
+      "item": "infinitepowerupd:sapphire_gem"
+    },
+    "3": {
+      "item": "infinitepowerupd:sapphire_gem"
+    },
+    "4": {
+      "item": "infinitepowerupd:sapphire_gem"
+    },
+    "5": {
+      "item": "infinitepowerupd:sapphire_gem"
+    },
+    "6": {
+      "item": "infinitepowerupd:sapphire_gem"
+    },
+    "7": {
+      "item": "infinitepowerupd:sapphire_gem"
+    },
+    "8": {
+      "item": "infinitepowerupd:sapphire_gem"
+    }
+  },
+  "result": {
+    "item": "infinitepowerupd:sapphire_ore_block",
+    "count": 1
+  }
+}

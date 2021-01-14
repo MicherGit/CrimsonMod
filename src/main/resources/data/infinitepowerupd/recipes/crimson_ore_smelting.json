@@ -1,0 +1,12 @@
+{
+  "group": "infinitepowerupd",
+  "type": "minecraft:smelting",
+  "experience": 4.8999999999999995,
+  "cookingtime": 200,
+  "ingredient": {
+    "item": "infinitepowerupd:crimson_ore"
+  },
+  "result": {
+    "item": "infinitepowerupd:crimson_gem"
+  }
+}

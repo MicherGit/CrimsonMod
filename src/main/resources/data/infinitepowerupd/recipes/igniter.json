@@ -1,0 +1,36 @@
+{
+  "group": "infinitepowerupd",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01 ",
+    "345",
+    " 78"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:redstone"
+    },
+    "1": {
+      "item": "minecraft:redstone"
+    },
+    "3": {
+      "item": "minecraft:redstone"
+    },
+    "4": {
+      "item": "infinitepowerupd:sapphire_gem"
+    },
+    "5": {
+      "item": "minecraft:diamond"
+    },
+    "7": {
+      "item": "minecraft:diamond"
+    },
+    "8": {
+      "item": "minecraft:netherrack"
+    }
+  },
+  "result": {
+    "item": "infinitepowerupd:the_crimson_void",
+    "count": 1
+  }
+}

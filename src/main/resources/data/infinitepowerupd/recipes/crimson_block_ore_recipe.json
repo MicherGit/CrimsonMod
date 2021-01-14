@@ -1,0 +1,13 @@
+{
+  "group": "infinitepowerupd",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "infinitepowerupd:crimson_ore_block"
+    }
+  ],
+  "result": {
+    "item": "infinitepowerupd:crimson_gem",
+    "count": 9
+  }
+}

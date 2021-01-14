@@ -1,5 +1,5 @@
 {
-  "_fv": 10,
+  "_fv": 15,
   "_type": "block",
   "definition": {
     "texture": "voidshadow_ore_block",
@@ -12,6 +12,7 @@
     "customModelName": "Single texture",
     "rotationMode": 0,
     "emissiveRendering": false,
+    "displayFluidOverlay": false,
     "itemTexture": "",
     "hasTransparency": false,
     "connectedSides": false,
@@ -27,6 +28,7 @@
     "hardness": 5.0,
     "resistance": 10.0,
     "hasGravity": false,
+    "isWaterloggable": false,
     "creativeTab": {
       "value": "CUSTOM:Crimsontale"
     },
@@ -35,7 +37,7 @@
       "value": ""
     },
     "dropAmount": 1,
-    "isBeaconBase": false,
+    "useLootTableForDrops": false,
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,
     "canProvidePower": false,
@@ -61,7 +63,7 @@
     "soundOnStep": {
       "value": "METAL"
     },
-    "luminance": 0.0,
+    "luminance": 0,
     "unbreakable": false,
     "breakHarvestLevel": 20,
     "spawnParticles": false,

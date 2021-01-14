@@ -1,0 +1,26 @@
+{
+  "group": "infinitepowerupd",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    "3 5"
+  ],
+  "key": {
+    "0": {
+      "item": "infinitepowerupd:crimson_gem"
+    },
+    "2": {
+      "item": "infinitepowerupd:crimson_gem"
+    },
+    "3": {
+      "item": "infinitepowerupd:crimson_gem"
+    },
+    "5": {
+      "item": "infinitepowerupd:crimson_gem"
+    }
+  },
+  "result": {
+    "item": "infinitepowerupd:crimson_armor_boots",
+    "count": 1
+  }
+}

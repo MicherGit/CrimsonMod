@@ -15,7 +15,7 @@ import gg.zetabloox.thecrimson.world.dimension.TheCrimsonVoidDimension;
 import gg.zetabloox.thecrimson.itemgroup.CrimsontaleItemGroup;
 
 public class TheCrimsonVoidItem extends Item {
-	@ObjectHolder("infinitepower:the_crimson_void")
+	@ObjectHolder("infinitepowerupd:the_crimson_void")
 	public static final Item block = null;
 	public TheCrimsonVoidItem() {
 		super(new Item.Properties().group(CrimsontaleItemGroup.tab).maxDamage(64));

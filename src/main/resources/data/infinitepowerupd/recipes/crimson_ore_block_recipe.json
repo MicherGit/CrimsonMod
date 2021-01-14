@@ -1,0 +1,42 @@
+{
+  "group": "infinitepowerupd",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "infinitepowerupd:crimson_gem"
+    },
+    "1": {
+      "item": "infinitepowerupd:crimson_gem"
+    },
+    "2": {
+      "item": "infinitepowerupd:crimson_gem"
+    },
+    "3": {
+      "item": "infinitepowerupd:crimson_gem"
+    },
+    "4": {
+      "item": "infinitepowerupd:crimson_gem"
+    },
+    "5": {
+      "item": "infinitepowerupd:crimson_gem"
+    },
+    "6": {
+      "item": "infinitepowerupd:crimson_gem"
+    },
+    "7": {
+      "item": "infinitepowerupd:crimson_gem"
+    },
+    "8": {
+      "item": "infinitepowerupd:crimson_gem"
+    }
+  },
+  "result": {
+    "item": "infinitepowerupd:crimson_ore_block",
+    "count": 1
+  }
+}

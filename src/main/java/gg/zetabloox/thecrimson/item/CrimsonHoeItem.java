@@ -9,13 +9,13 @@ import net.minecraft.item.Item;
 import net.minecraft.item.IItemTier;
 import net.minecraft.item.HoeItem;
 
-import gg.zetabloox.thecrimson.InfinitepowerModElements;
+import gg.zetabloox.thecrimson.InfinitepowerupdModElements;
 
-@InfinitepowerModElements.ModElement.Tag
-public class CrimsonHoeItem extends InfinitepowerModElements.ModElement {
-	@ObjectHolder("infinitepower:crimson_hoe")
+@InfinitepowerupdModElements.ModElement.Tag
+public class CrimsonHoeItem extends InfinitepowerupdModElements.ModElement {
+	@ObjectHolder("infinitepowerupd:crimson_hoe")
 	public static final Item block = null;
-	public CrimsonHoeItem(InfinitepowerModElements instance) {
+	public CrimsonHoeItem(InfinitepowerupdModElements instance) {
 		super(instance, 68);
 	}
 
@@ -45,7 +45,7 @@ public class CrimsonHoeItem extends InfinitepowerModElements.ModElement {
 			public Ingredient getRepairMaterial() {
 				return Ingredient.EMPTY;
 			}
-		}, -3f, new Item.Properties().group(ItemGroup.TOOLS)) {
+		}, 0, -3f, new Item.Properties().group(ItemGroup.TOOLS)) {
 		}.setRegistryName("crimson_hoe"));
 	}
 }

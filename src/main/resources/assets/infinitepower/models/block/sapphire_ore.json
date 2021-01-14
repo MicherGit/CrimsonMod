@@ -1,7 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "infinitepower:blocks/sapphire_ore",
-    "particle": "infinitepower:blocks/sapphire_ore"
-  }
-}

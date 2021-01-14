@@ -3,18 +3,19 @@ package gg.zetabloox.thecrimson.item;
 
 import net.minecraftforge.registries.ObjectHolder;
 
+import net.minecraft.item.Rarity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
 import net.minecraft.block.BlockState;
 
 import gg.zetabloox.thecrimson.itemgroup.CrimsontaleItemGroup;
-import gg.zetabloox.thecrimson.InfinitepowerModElements;
+import gg.zetabloox.thecrimson.InfinitepowerupdModElements;
 
-@InfinitepowerModElements.ModElement.Tag
-public class SapphireGemItem extends InfinitepowerModElements.ModElement {
-	@ObjectHolder("infinitepower:sapphire_gem")
+@InfinitepowerupdModElements.ModElement.Tag
+public class SapphireGemItem extends InfinitepowerupdModElements.ModElement {
+	@ObjectHolder("infinitepowerupd:sapphire_gem")
 	public static final Item block = null;
-	public SapphireGemItem(InfinitepowerModElements instance) {
+	public SapphireGemItem(InfinitepowerupdModElements instance) {
 		super(instance, 97);
 	}
 
@@ -24,7 +25,7 @@ public class SapphireGemItem extends InfinitepowerModElements.ModElement {
 	}
 	public static class ItemCustom extends Item {
 		public ItemCustom() {
-			super(new Item.Properties().group(CrimsontaleItemGroup.tab).maxStackSize(64));
+			super(new Item.Properties().group(CrimsontaleItemGroup.tab).maxStackSize(64).rarity(Rarity.COMMON));
 			setRegistryName("sapphire_gem");
 		}
 

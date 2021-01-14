@@ -9,13 +9,13 @@ import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.item.IItemTier;
 
-import gg.zetabloox.thecrimson.InfinitepowerModElements;
+import gg.zetabloox.thecrimson.InfinitepowerupdModElements;
 
-@InfinitepowerModElements.ModElement.Tag
-public class VoidShadowShovelItem extends InfinitepowerModElements.ModElement {
-	@ObjectHolder("infinitepower:void_shadow_shovel")
+@InfinitepowerupdModElements.ModElement.Tag
+public class VoidShadowShovelItem extends InfinitepowerupdModElements.ModElement {
+	@ObjectHolder("infinitepowerupd:void_shadow_shovel")
 	public static final Item block = null;
-	public VoidShadowShovelItem(InfinitepowerModElements instance) {
+	public VoidShadowShovelItem(InfinitepowerupdModElements instance) {
 		super(instance, 127);
 	}
 
